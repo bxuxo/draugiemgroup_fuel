@@ -1,0 +1,155 @@
+* { 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+/* login / register page */
+.wrapper-login {
+    height: 100vh;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    outline: 1px solid black;
+    gap: 5px;
+}
+
+/* home page */
+.wrapper-home > header, .wrapper-view > header {
+    background-color: rgb(200, 200, 200);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.my-uploads {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.btn-new-upload {
+    font-size: 50px;
+    width: 300px;
+    height: 100px;
+
+    background-color: rgba(150, 255, 150);
+}
+
+.btn-view-upload {
+    font-size: 25px;
+    width: 300px;
+    height: 100px;
+}
+
+/* upload page */
+.container-upload {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    outline: 1px solid black;
+    gap: 5px;
+}
+
+#loading_notif {
+    background-image: url(loading.gif);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+/* view page */
+.wrapper-view {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-aside {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 5px;
+    gap: 5px;
+    background-color: rgba(150, 150, 150);
+}
+.filter-aside > *, .filter-aside > * > *, .filter-date-div > *, .date-overlay-wrapper > *, .saved-configs > *, .create-config > *, .saved-configs > * > *, .create-config > * > * {
+    width: 300px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.filter-date-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+}
+
+.filter-div {
+    outline: 1px solid black;
+}
+
+.filter-div > p {
+    padding: 0px 2px;
+}
+
+.date-overlay-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.date-overlay-wrapper > input {
+    width: 200px;
+}
+
+.date-overlay-wrapper > p {
+    width: fit-content;
+}
+
+table {
+    max-height: 200px;
+    flex: 1;
+}
+
+table, td, th {
+    outline: 1px solid black;
+    font-size: 15px;
+    overflow-y: scroll;
+    height: fit-content;
+}
+
+.content-section {
+    display: flex;
+    flex: 1;
+    padding-right: 2px;
+}
+
+.table-wrapper {
+    display: flex;
+    flex: 1;
+    max-height: calc(100vh - 40px);
+    overflow-y: scroll;
+}
+
+u {
+    padding: 0px 2px;
+}
+
+.create-config {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
